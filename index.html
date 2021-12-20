@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <title>
+           family boook 
+        </title>
+
+        <link rel="stylesheet" href="style.css">,
+
+    </head>
+    <body>
+        <center style="margin-top: 40px;">
+            <h1>
+             My Family Book
+            </h1>
+            <hr></hr>
+            <img src="https://i.postimg.cc/MKdhy06Z/family.jpg" id="family_member_image" width="150px" height="200px">
+            <h4 id="family_member_name"></h4>
+
+            <button id="button" onclick="family()">Next</button>
+
+            <hr>
+            <script>
+                var names=[
+                "2. father (rannesh kumar sangwan)",
+                "3. sister (shreya sangwan)",
+                "4. mother (tajinder sangwan)",
+                "5. its your boi (shourya veer sangwan)"];
+                
+                var img=[
+                "000-http-error-codes.png",
+                "000-http-error-codes.png",
+                "000-http-error-codes.png",
+                "WIN_20211214_21_11_17_Pro(3).jpg"
+            ];
+               
+                var i=0;
+                function family(){
+                    document.getElementById("family_member_name").innerHTML=names[i];
+                   document.getElementById("family_member_image").src=img[i];
+                  i++;
+                  if(i==4){
+                    i=0;
+                  }
+                } </script>
+          
+        </center>
+
+        <script src="main.js"></script>
+    </body>
+</html>
